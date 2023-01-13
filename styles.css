@@ -275,6 +275,13 @@ a{
     gap: 1rem;
 }
 
+.list--habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
 .container--habilidades {
     display: flex;
     flex-direction: column;
@@ -301,12 +308,18 @@ a{
     justify-content: center;
     gap: 1rem;
 }
+.list--experiencia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
 
 .experiencia--item {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .experiencia--info {
@@ -332,7 +345,14 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2.5rem;
+}
+
+.list-portafolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .Portafolio h2 {
@@ -350,6 +370,11 @@ a{
     align-items: center;
     gap: 2rem;
     text-align: center;
+}
+
+.contacto--iconos {
+    display: flex;
+    justify-content: center;
 }
 
 .btn-contacto {
@@ -389,12 +414,12 @@ a{
 
 @media (min-width: 576px) {
     
-    .contacto {
+    /* .contacto {
         flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 2.5rem;
-    }
+    } */
 
 }
 
@@ -442,21 +467,30 @@ a{
         justify-content: center;
     }
 
-    .Experiencia {
+    /* HABILIDADES */
+
+    .list--habilidades {
         flex-direction: row;
-        flex-wrap: wrap;
+        gap: 1.5rem;
     }
 
-    .Portafolio {
+
+    /* EXPERIENCIA */
+    .list--experiencia {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    /* PORTAFOLIO */
+    .list-portafolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         gap: 2.5rem;
     }
 
-    .mishabilidades {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+    
 
 }
 
@@ -468,6 +502,10 @@ a{
     .navbar--menu {
         justify-content: flex-end;
         
+    }
+
+    .contacto--iconos {
+        gap: 10rem;
     }
 }
 
